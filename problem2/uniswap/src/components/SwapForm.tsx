@@ -123,6 +123,8 @@ const SwapForm = () => {
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-900 mx-4 pt-4 sm:pt-8 md:pt-12">
+      {loadingTokens && <p className="text-yellow-400 text-center">Fetching token prices...</p>}
+      {error && <p className="text-red-500 text-center">{error}</p>}
       <div className="bg-gray-800 text-white p-6 sm:p-8 rounded-xl shadow-2xl w-full max-w-2xl">
         {" "}
         {/* Increased max-width for horizontal layout */}
