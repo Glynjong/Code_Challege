@@ -278,7 +278,7 @@ const SwapForm = () => {
         >
           <div className="bg-gray-800 p-6 rounded-xl shadow-2xl text-center">
             <img
-              src="./src/assets/exclamation-mark-in-a-circle-svgrepo-com.svg"
+              src="/exclamation-mark-in-a-circle-svgrepo-com.svg"
               alt="Alert"
               className="w-20 h-20 mx-auto mb-4"
             />
@@ -315,7 +315,7 @@ const SwapForm = () => {
         >
           <div className="bg-gray-800 p-6 rounded-xl shadow-2xl text-center">
             <img
-              src="./src/assets/tick-circle-svgrepo-com.svg"
+              src="/tick-circle-svgrepo-com.svg"
               alt="Swap Confirmed"
               className="w-20 h-20 mx-auto mb-4"
             />
@@ -344,7 +344,7 @@ const SwapForm = () => {
         >
           <div className="bg-gray-800 p-6 rounded-xl shadow-2xl text-center">
             <img
-              src="./src/assets/cancel-svgrepo-com.svg"
+              src="/cancel-svgrepo-com.svg"
               alt="Swap Cancel"
               className="w-20 h-20 mx-auto mb-4"
             />
