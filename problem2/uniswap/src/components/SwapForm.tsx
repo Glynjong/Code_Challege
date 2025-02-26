@@ -127,7 +127,7 @@ const SwapForm = () => {
         {" "}
         {/* Increased max-width for horizontal layout */}
         <h2 className="text-2xl sm:text-3xl font-bold text-center mb-4 sm:mb-6">
-          Swap
+          Swap Currencies
         </h2>
         {/* Horizontal layout for larger screens */}
         <div className="flex flex-col md:flex-row md:items-center md:space-x-6">
@@ -139,8 +139,8 @@ const SwapForm = () => {
             <div className="relative">
               <select
                 className="w-full p-2 sm:p-3 bg-gray-700 border border-gray-600 rounded-lg appearance-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500"
-                value={fromToken}
-                onChange={(e) => setFromToken(e.target.value)}
+                value={toToken}
+                onChange={(e) => setToToken(e.target.value)}
               >
                 {Object.keys(tokens).map((token) => (
                   <option key={token} value={token}>
@@ -275,7 +275,11 @@ const SwapForm = () => {
           onClose={() => setIsFirstConfirmOpen(false)}
         >
           <div className="bg-gray-800 p-6 rounded-xl shadow-2xl text-center">
-          <img src="./src/assets/exclamation-mark-in-a-circle-svgrepo-com.svg" alt="Alert" className="w-20 h-20 mx-auto mb-4" />
+            <img
+              src="./src/assets/exclamation-mark-in-a-circle-svgrepo-com.svg"
+              alt="Alert"
+              className="w-20 h-20 mx-auto mb-4"
+            />
             <Dialog.Title className="text-lg font-bold text-white">
               Confirm Swap
             </Dialog.Title>
@@ -308,7 +312,11 @@ const SwapForm = () => {
           onClose={() => setIsFinalConfirmOpen(false)}
         >
           <div className="bg-gray-800 p-6 rounded-xl shadow-2xl text-center">
-          <img src="./src/assets/tick-circle-svgrepo-com.svg" alt="Swap Confirmed" className="w-20 h-20 mx-auto mb-4" />
+            <img
+              src="./src/assets/tick-circle-svgrepo-com.svg"
+              alt="Swap Confirmed"
+              className="w-20 h-20 mx-auto mb-4"
+            />
             <Dialog.Title className="text-lg font-bold text-white">
               Swap Confirmed
             </Dialog.Title>
@@ -333,7 +341,11 @@ const SwapForm = () => {
           onClose={() => setIsCancelConfirmOpen(false)}
         >
           <div className="bg-gray-800 p-6 rounded-xl shadow-2xl text-center">
-          <img src="./src/assets/cancel-svgrepo-com.svg" alt="Swap Cancel" className="w-20 h-20 mx-auto mb-4" />
+            <img
+              src="./src/assets/cancel-svgrepo-com.svg"
+              alt="Swap Cancel"
+              className="w-20 h-20 mx-auto mb-4"
+            />
             <Dialog.Title className="text-lg font-bold text-white">
               Swap Cancelled
             </Dialog.Title>
