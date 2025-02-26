@@ -139,10 +139,10 @@ const SwapForm = () => {
               From
             </label>
             <div className="relative">
-              <select
+            <select
                 className="w-full p-2 sm:p-3 bg-gray-700 border border-gray-600 rounded-lg appearance-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500"
-                value={toToken}
-                onChange={(e) => setToToken(e.target.value)}
+                value={fromToken}
+                onChange={(e) => setFromToken(e.target.value)}
               >
                 {Object.keys(tokens).map((token) => (
                   <option key={token} value={token}>
